@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1682BBEB01B2C6BDDF913879 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC865AE08A2FE6FD6A515C1 /* libPods.a */; };
 		8FDF05751BE6281B00CF9E4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF05741BE6281B00CF9E4A /* main.m */; };
 		8FDF05781BE6281B00CF9E4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF05771BE6281B00CF9E4A /* AppDelegate.m */; };
 		8FDF057B1BE6281B00CF9E4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF057A1BE6281B00CF9E4A /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		8FDF05801BE6281B00CF9E4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF057F1BE6281B00CF9E4A /* Images.xcassets */; };
 		8FDF05831BE6281B00CF9E4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF05811BE6281B00CF9E4A /* LaunchScreen.xib */; };
 		8FDF058F1BE6281C00CF9E4A /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF058E1BE6281C00CF9E4A /* ______Tests.m */; };
+		8FDF059A1BE65C3000CF9E4A /* CityListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF05991BE65C3000CF9E4A /* CityListModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FC865AE08A2FE6FD6A515C1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		66465D18329C833CE65FEC6F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8027BED2667901AA2A38148D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8FDF056F1BE6281B00CF9E4A /* 搜索框的使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "搜索框的使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDF05731BE6281B00CF9E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FDF05741BE6281B00CF9E4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		8FDF05881BE6281C00CF9E4A /* 搜索框的使用Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "搜索框的使用Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDF058D1BE6281C00CF9E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FDF058E1BE6281C00CF9E4A /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		8FDF05981BE65C3000CF9E4A /* CityListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListModel.h; sourceTree = "<group>"; };
+		8FDF05991BE65C3000CF9E4A /* CityListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1682BBEB01B2C6BDDF913879 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017078CAF7516BE192156F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FC865AE08A2FE6FD6A515C1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43AA057EAB8AECFF08B82809 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66465D18329C833CE65FEC6F /* Pods.debug.xcconfig */,
+				8027BED2667901AA2A38148D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8FDF05661BE6281B00CF9E4A = {
 			isa = PBXGroup;
 			children = (
 				8FDF05711BE6281B00CF9E4A /* 搜索框的使用 */,
 				8FDF058B1BE6281C00CF9E4A /* 搜索框的使用Tests */,
 				8FDF05701BE6281B00CF9E4A /* Products */,
+				43AA057EAB8AECFF08B82809 /* Pods */,
+				017078CAF7516BE192156F16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +111,8 @@
 				8FDF05761BE6281B00CF9E4A /* AppDelegate.h */,
 				8FDF05771BE6281B00CF9E4A /* AppDelegate.m */,
 				8FDF05791BE6281B00CF9E4A /* ViewController.h */,
+				8FDF05981BE65C3000CF9E4A /* CityListModel.h */,
+				8FDF05991BE65C3000CF9E4A /* CityListModel.m */,
 				8FDF057A1BE6281B00CF9E4A /* ViewController.m */,
 				8FDF057C1BE6281B00CF9E4A /* Main.storyboard */,
 				8FDF057F1BE6281B00CF9E4A /* Images.xcassets */,
@@ -126,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FDF05921BE6281C00CF9E4A /* Build configuration list for PBXNativeTarget "搜索框的使用" */;
 			buildPhases = (
+				8F09079302167C11DC045ED2 /* Check Pods Manifest.lock */,
 				8FDF056B1BE6281B00CF9E4A /* Sources */,
 				8FDF056C1BE6281B00CF9E4A /* Frameworks */,
 				8FDF056D1BE6281B00CF9E4A /* Resources */,
+				577EA02CE7740ACB9E84E3CD /* Embed Pods Frameworks */,
+				F79D33475CCC75DDE257F61C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,11 +246,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		577EA02CE7740ACB9E84E3CD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F09079302167C11DC045ED2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F79D33475CCC75DDE257F61C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FDF056B1BE6281B00CF9E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDF059A1BE65C3000CF9E4A /* CityListModel.m in Sources */,
 				8FDF057B1BE6281B00CF9E4A /* ViewController.m in Sources */,
 				8FDF05781BE6281B00CF9E4A /* AppDelegate.m in Sources */,
 				8FDF05751BE6281B00CF9E4A /* main.m in Sources */,
@@ -345,6 +426,7 @@
 		};
 		8FDF05931BE6281C00CF9E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66465D18329C833CE65FEC6F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "搜索框的使用/Info.plist";
@@ -355,6 +437,7 @@
 		};
 		8FDF05941BE6281C00CF9E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8027BED2667901AA2A38148D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "搜索框的使用/Info.plist";
@@ -416,6 +499,7 @@
 				8FDF05941BE6281C00CF9E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FDF05951BE6281C00CF9E4A /* Build configuration list for PBXNativeTarget "搜索框的使用Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +508,7 @@
 				8FDF05971BE6281C00CF9E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
